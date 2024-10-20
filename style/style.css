@@ -10,7 +10,7 @@ body section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Manrope";
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
 }
 
 .advices-container {
@@ -19,17 +19,24 @@ body section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 140px;
-  width: 35%;
+  margin-top: 8rem;
+  max-width: 35%;
   padding: 27px;
   border-radius: 10px;
   background-color: hsl(217, 19%, 24%);
-  font-size: 28px;
+  font-size: 1.5rem;
   color: hsl(193, 38%, 86%);
 }
 
 .divider-icon {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.divider-icon img {
+  max-width: 100%;
 }
 
 button {
@@ -41,7 +48,7 @@ button {
   padding: 0;
   cursor: pointer;
   border-radius: 50%;
-  transition: box-shadow 210ms ease;
+  transition: box-shadow 200ms ease;
 }
 button img {
   display: block;
@@ -75,4 +82,36 @@ button:active {
 
 .attribution a {
   color: hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width: 639px) {
+  .advices-container {
+    max-width: 50%;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .advices-container {
+    max-width: 70%;
+    padding: 19px;
+    font-size: 1.3rem;
+  }
+  button {
+    cursor: auto;
+  }
+}
+@media screen and (max-width: 380px) {
+  .advices-container {
+    max-width: 80%;
+    margin-top: 6.9rem;
+    font-size: 1.3rem;
+  }
+  button {
+    cursor: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .advices-container {
+    max-width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
