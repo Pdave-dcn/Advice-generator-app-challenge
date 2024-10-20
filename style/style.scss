@@ -28,17 +28,46 @@ body {
 }
 
 .advices-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 140px;
   width: 35%;
   padding: 27px;
   border-radius: 10px;
   background-color: $color-dark-grayish-blue;
   font-size: $font-size-quote;
   color: $color-light-cyan;
+}
+
+.divider-icon {
+  margin-bottom: 20px;
+}
+
+button {
+  position: absolute;
+  bottom: -1.6rem;
+  border: none;
+  background: none;
+  background-color: $color-neon-green;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: box-shadow 210ms ease;
+
+  img {
+    display: block;
+    //background-color: $color-neon-green;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.9rem;
+  }
+
+  &:active {
+    box-shadow: 0px 0px 30px 0 $color-neon-green;
+  }
 }
 
 .advice-number {
@@ -51,12 +80,15 @@ body {
 .quote {
   text-align: center;
   font-weight: $font-weights;
+  margin-bottom: 25px;
 }
 
 .attribution {
+  margin-top: 70px;
   font-size: 11px;
+  color: $color-light-cyan;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: $color-neon-green;
 }

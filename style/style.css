@@ -14,17 +14,43 @@ body section {
 }
 
 .advices-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 140px;
   width: 35%;
   padding: 27px;
   border-radius: 10px;
   background-color: hsl(217, 19%, 24%);
   font-size: 28px;
   color: hsl(193, 38%, 86%);
+}
+
+.divider-icon {
+  margin-bottom: 20px;
+}
+
+button {
+  position: absolute;
+  bottom: -1.6rem;
+  border: none;
+  background: none;
+  background-color: hsl(150, 100%, 66%);
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: box-shadow 210ms ease;
+}
+button img {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.9rem;
+}
+button:active {
+  box-shadow: 0px 0px 30px 0 hsl(150, 100%, 66%);
 }
 
 .advice-number {
@@ -37,13 +63,16 @@ body section {
 .quote {
   text-align: center;
   font-weight: 800;
+  margin-bottom: 25px;
 }
 
 .attribution {
+  margin-top: 70px;
   font-size: 11px;
+  color: hsl(193, 38%, 86%);
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(150, 100%, 66%);
 }/*# sourceMappingURL=style.css.map */
