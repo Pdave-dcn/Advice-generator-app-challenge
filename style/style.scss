@@ -7,13 +7,51 @@ $color-light-cyan: hsl(193, 38%, 86%);
 $color-neon-green: hsl(150, 100%, 66%);
 
 // Neutral colors
-$color-gravish-blue: hsl(217, 19%, 38%);
 $color-dark-grayish-blue: hsl(217, 19%, 24%);
 $color-dark-blue: hsl(218, 23%, 16%);
+$color-gravish-blue: hsl(217, 19%, 38%);
 
 //Font
 $font-size-quote: 28px;
 $font-weights: 800;
+
+body {
+  background-color: $color-dark-blue;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope";
+  }
+}
+
+.advices-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  width: 35%;
+  padding: 27px;
+  border-radius: 10px;
+  background-color: $color-dark-grayish-blue;
+  font-size: $font-size-quote;
+  color: $color-light-cyan;
+}
+
+.advice-number {
+  font-size: 12px;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  color: $color-neon-green;
+}
+
+.quote {
+  text-align: center;
+  font-weight: $font-weights;
+}
 
 .attribution {
   font-size: 11px;

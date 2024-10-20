@@ -2,6 +2,43 @@
   margin: 0;
 }
 
+body {
+  background-color: hsl(218, 23%, 16%);
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope";
+}
+
+.advices-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  width: 35%;
+  padding: 27px;
+  border-radius: 10px;
+  background-color: hsl(217, 19%, 24%);
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+}
+
+.advice-number {
+  font-size: 12px;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  color: hsl(150, 100%, 66%);
+}
+
+.quote {
+  text-align: center;
+  font-weight: 800;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
