@@ -6,15 +6,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 This is an **Advice Generator App** built using HTML, CSS, and JavaScript. It fetches random advice from the [Advice Slip API](https://api.adviceslip.com) and displays it on the webpage. The app uses a button with a dice icon to fetch new advice when clicked.
 
-## Table of Contents
-
-1. [Features](#features)
-2. [Getting Started](#getting-started)
-3. [Project Structure](#project-structure)
-4. [Usage](#usage)
-5. [Customization](#customization)
-6. [Attribution](#attribution)
-
 ## Features
 
 - Fetches random advice using the **Advice Slip API**.
